@@ -9,7 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var imageCup: UIImageView!
+    private let cups:[UIImage] = [
+    UIImage(named: "s01")!,UIImage(named: "s02")!,
+    UIImage(named: "s01")!,UIImage(named: "s03")!
+    
+    ]
+    @IBAction func pressBtn(_ sender: Any) {
+        imageCup.animationImages = cups
+        imageCup.animationDuration = 0.2
+        imageCup.animationRepeatCount = 5
+        imageCup.startAnimating()
+    }
+    
+    @IBAction func upBtn(_ sender: Any) {
+        let rand = Int(arc4random_uniform(4))
+        imageCup.image = cups[rand]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

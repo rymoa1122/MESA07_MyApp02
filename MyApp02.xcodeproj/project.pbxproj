@@ -54,6 +54,7 @@
 		29D1D0881EF8AE8A00422970 /* MyApp02 */ = {
 			isa = PBXGroup;
 			children = (
+				29D1D09B1EF8B74000422970 /* imgs */,
 				29D1D0891EF8AE8A00422970 /* AppDelegate.swift */,
 				29D1D08B1EF8AE8A00422970 /* ViewController.swift */,
 				29D1D08D1EF8AE8A00422970 /* Main.storyboard */,
@@ -62,6 +63,13 @@
 				29D1D0951EF8AE8A00422970 /* Info.plist */,
 			);
 			path = MyApp02;
+			sourceTree = "<group>";
+		};
+		29D1D09B1EF8B74000422970 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
